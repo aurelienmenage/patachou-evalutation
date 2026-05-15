@@ -3,11 +3,9 @@
     margin: auto;
     box-sizing: border-box;
     background-color: #ffffff;
+    
 }
-/*.container{
-    max-width: 1200px;
-    margin-inline: auto;
-}*/
+
 .body{
     height: 100%;
    width: 100%;
@@ -16,7 +14,12 @@
    max-width: 100%;
    height: 100%;
 }
+.header__img{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
 
+}
 
 
 .nav__menu{
@@ -29,22 +32,52 @@
     gap: 10px;
     font-weight: 600;
     font-family:'poppins'; 
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     }
 .accueil{
     color:#AB864C
 
 }
+.section__haute_couture{
+    position: relative;
+    display: inline-block;
+        
+}
+.img__haute_couture{
+    display: block;
+    
+}
+.section__haute_couture{
+            
+        padding: 20px 20px;
+        font-family: 'kaisei Decol';
+        font-size: 120%;
+        font-weight: 600;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-self: center;
+
+    }
+.section__introduction{
+    
+
+    
+}
 .section__introduction_1{
+    
     font-family: 'kaisei Decol';
     font-weight: 600;
     font-size: 130%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     align-content: center;
     flex-flow: column wrap;
-   margin-bottom: 50px;
+   margin-bottom: 20px;
     margin-top: 50px;
 }
 .section__introduction_2{
