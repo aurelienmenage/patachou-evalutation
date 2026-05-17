@@ -175,12 +175,47 @@
     justify-content: flex-start;
 }
 .button__histoire{
-
+    
+    justify-content: flex-start;
+    padding: 15px 20px;
     background-color: #AB864C;
     color: #ffffff;
-   
-    align-items: baseline;
-    align-self: end;
+    margin-bottom: 50px;   
+}
+.div__trait{
+    display:inline-block;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    align-self: stretch;
+
+}
+.section__evenement{
+    font-family: 'kaisei Decol';
+    font-size: 90%;
+}
+.section__evenement1{
+    font-size: 160%;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.section__evenement2{
+    display: inline-block;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+/*section formulaire*/
+
+.label {
+  
+  display: inline-block;
+  width: 90px;
+  text-align: right;
 }
 
 
