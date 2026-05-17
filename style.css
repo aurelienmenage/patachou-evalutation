@@ -121,7 +121,7 @@
     text-align: center;
     align-self: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
     /*exemples de patisseries*/
 
@@ -141,7 +141,9 @@
     gap:48px;
 } 
 .h1__title{
-    display: block;
+    text-align: center;
+    align-items: flex-start;
+    display: flex;
     background-color: #AB864C;
 
 }
@@ -154,7 +156,32 @@
     margin-bottom: 50px;
     
 }
+/*section histoire*/
+.section__histoire{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family:'kaisei Decol';
+    gap: 24px;
+}
+.histoire1{
+    
+    font-size: 180%;
+    text-align: center;
+}
+.histoire2{
+    
+    font-size: 70%;
+    justify-content: flex-start;
+}
+.button__histoire{
 
+    background-color: #AB864C;
+    color: #ffffff;
+   
+    align-items: baseline;
+    align-self: end;
+}
 
 
 
