@@ -90,6 +90,7 @@
     font-family: 'kaisei Decol';
     font-weight: 600;
     font-size: 130%;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,30 +118,44 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    
+    text-align: center;
     align-self: center;
 
     margin-bottom: 50px;
 }
-    /*exemple de patisseries*/
+    /*exemples de patisseries*/
 
 .signature{
-    margin-top: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     background-color: #AB864C;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     font-family: 'kaisei Decol';
-    font:white;
+    font-size: 100%;
+    color:white;
+    text-align: center;
+    gap:48px;
 } 
-.h2__signature{
+.h1__title{
+    display: block;
     background-color: #AB864C;
+
 }
-.p__signature{
+.button__decouverte{
     background-color: #AB864C;
+    color:#ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    border: 1px solid #ffff;
+    margin-bottom: 50px;
+    
 }
 
-  
+
 
 
 
