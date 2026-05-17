@@ -7,14 +7,19 @@
 }
 
 .body{
+    
     height: 100%;
    width: 100%;
 }
+
 .img{
    max-width: 100%;
    height: 100%;
 }
 .header__img{
+    align-items: flex-start;
+    align-self: center;
+    align-content: center;
     justify-content: center;
     display: flex;
     margin-bottom: 20px;
@@ -32,60 +37,70 @@
     gap: 10px;
     font-weight: 600;
     font-family:'poppins'; 
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     }
 .accueil{
+
     color:#AB864C
 
 }
-.section__haute_couture{
-    position: relative;
-    display: inline-block;
-        
-}
-.img__haute_couture{
-    display: block;
+
     
+
+.img__hc::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:image-set(haute-couture-2.jpg);
 }
-.section__haute_couture{
+
+.hc__text{
             
         padding: 20px 20px;
         font-family: 'kaisei Decol';
         font-size: 120%;
         font-weight: 600;
-        position: absolute;
+        position:relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         align-content: space-around;
         align-self: center;
-
+        
     }
-.section__introduction{
+.introduction{
     
-
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    
     
 }
-.section__introduction_1{
+.introduction_1{
     
     font-family: 'kaisei Decol';
     font-weight: 600;
     font-size: 130%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    flex-flow: column wrap;
-   margin-bottom: 20px;
+    
+    margin-bottom: 20px;
     margin-top: 50px;
 }
-.section__introduction_2{
+.introduction_2{
     font-weight: 600;
     font-family: 'kaisei Decol';
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
-.section__introduction_3{
+.introduction_3{
     border: 1px solid black;
     padding: 5px;
     width:auto;
