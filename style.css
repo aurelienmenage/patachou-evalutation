@@ -6,6 +6,7 @@
     
 }
 
+
 .body{
     
     height: 100%;
@@ -26,7 +27,7 @@
 
 }
 
-
+/* éléments de navigation*/
 .nav__menu{
     list-style-type: none;
     display: flex;
@@ -45,6 +46,7 @@
 
 }
 
+/* image d'introduction de la page*/
 .haute_couture{
     background-image: "haute-couture-2.jpg";
     display: flex;
@@ -71,7 +73,9 @@
         align-content:center;
         align-self: center;
         
-    }
+}
+
+/*introduction de la page*/
 .introduction{
     
     position: relative;
@@ -118,8 +122,24 @@
 
     margin-bottom: 50px;
 }
-    
-    
+    /*exemple de patisseries*/
+
+.signature{
+    margin-top: 50px;
+    background-color: #AB864C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'kaisei Decol';
+    font:white;
+} 
+.h2__signature{
+    background-color: #AB864C;
+}
+.p__signature{
+    background-color: #AB864C;
+}
+
   
 
 
