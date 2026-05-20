@@ -2,8 +2,7 @@
     padding: auto;
     margin: auto;
     box-sizing: border-box;
-    background-color: #ffffff;
-    
+     
 }
 
 
@@ -219,6 +218,20 @@
 }
 
 
+/*adresse et plan*/
+.section__coordonnees{
+    background-color: #AB864C;
+    color:#ffffff;
+    font-family: 'kaisei Decol';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section__coordonnees1{
+    background-color: #AB864C;
+    font-size: 180%;
+    display: flex;
+}
 
 
 
