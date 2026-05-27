@@ -1,228 +1,261 @@
-*{
-    padding: auto;
-    margin: auto;
+
+
+/* ---------------------- */
+/* RESET & BASE */
+/* ---------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-     
-}
-.body{
-   background-color: #ffffff;
-   font-family: 'poppins';
-   line-height: 1.6;
 }
 
-.ul{
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
     list-style: none;
 }
-.a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
 
-/*HEADER*/
+/* ---------------------- */
+/* HEADER */
+/* ---------------------- */
 
-.header{
-    
+header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color:#ffff ;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 20px;
 }
 
-.img{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.logo__patachou {
+    width: 150px;
 }
 
-.nav__menu{
+.nav__menu_list {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.nav__menu_list{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav__menu_list a {
-    text-decoration: none;
-    color: black;
+    font-weight: 600;
 }
 
-.nav__menu_list a.accueil{
-    color:#AB864C
-}
-
-/* Section Haute-Couture*/
-.haute_couture{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
-}
+/* ---------------------- */
+/* SECTION HAUTE COUTURE */
+/* ---------------------- */
 
 .haute_couture_content {
-            
-        padding: 20px;
-        font-family: 'kaisei Decol', serif;
-        font-size: 1.2rem;
-        font-weight: 600;
-        text-align: center;
-        
-}
-
-/*introduction de la page*/
-.introduction{
-    
+    position: relative;
     text-align: center;
-    padding: 40px 20px;  
-    
-    
 }
-.introduction_1{
-    
-    font-family: 'kaisei Decol', serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-   
-}
-.introduction_2{
-    font-weight: 600;
-    font-family: 'kaisei Decol', serif;
-    margin-bottom: 40px;
-   
-}
-.introduction_3{
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 1.3rem;
-    margin: 0 auto 40px;
-    max-width: 600px;
 
+.haute_couture_content .title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
 }
-    /*exemples de patisseries - signature*/
 
-.signature{
-    background-color: #AB864C;
-    color:white;
+/* ---------------------- */
+/* INTRODUCTION */
+/* ---------------------- */
+
+.introduction {
+    padding: 40px 20px;
     text-align: center;
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    gap:48px;
+    max-width: 900px;
+    margin: auto;
+}
 
-   
-} 
-.title{
-    font-size: 220%;
+.introduction_1 {
+    font-size: 1.4rem;
+    font-style: italic;
+}
 
+.introduction_3 {
+    margin-top: 20px;
+}
+
+/* ---------------------- */
+/* SIGNATURE */
+/* ---------------------- */
+
+.signature {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.signature__item {
+    max-width: 700px;
+    margin: 40px auto;
 }
 
 .signature__item img {
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
-
-
-
-.button__decouverte{
-    background-color: #AB864C;
-    color:#ffffff;
-    padding: 15px 32px;
-    text-align: center;
-    border: 1px solid #ffff;
-    cursor: pointer;
-    margin-bottom: 50px;
-    
-}
-/*section histoire*/
-.section__histoire{
-   display: flex;
-   flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    padding: 40px 20px;
-    font-family: 'Kaisei Decol', serif;
-}
-
-.histoire1{
-    
-    font-size: 1.8rem;
-    text-align: center;
-}
-.histoire2{
-    
-    font-size: 0.9rem;
-    max-width: 600px;
-    text-align: center;
-}
-
-.button__histoire{
-   
-    padding: 15px 20px;
-    background-color: #AB864C;
-    color: #ffffff;
+.button__decouverte {
+    margin-top: 20px;
+    padding: 12px 20px;
     border: none;
+    background-color: #c49a6c;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
-    margin-bottom: 50px;   
+    border-radius: 5px;
 }
-/* trait de séparation*/
 
-.section__evenement{
-   font-size: 1.6rem;
-   text-align: center;
-   margin-bottom: 20px;
-    justify-content: space-between;
-    flex-direction: column-reverse;
+/* ---------------------- */
+/* HISTOIRE */
+/* ---------------------- */
+
+.section__histoire {
+    padding: 40px 20px;
+    text-align: center;
 }
-/*section formulaire*/
 
-.section__evenement_formulaire form {
-    display: flex;
-    justify-content:flex-start;
-    flex-direction: column;
+.section__histoire img:first-child {
+    max-width: 300px;
+    margin: auto;
+}
+
+.button__histoire {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #c49a6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ---------------------- */
+/* EVENEMENT */
+/* ---------------------- */
+
+.section__evenement {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section__evenement_formulaire {
+    display: grid;
     gap: 15px;
+    margin-top: 20px;
 }
+
 .section__evenement_formulaire input,
 .section__evenement_formulaire textarea {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #aaa;
+    border-radius: 5px;
 }
+
 .evenement__envoyer {
-    background-color: #AB864C;
-    color: #ffffff;
     padding: 12px;
+    background-color: #c49a6c;
+    color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/*adresse et plan*/
+/* ---------------------- */
+/* COORDONNÉES */
+/* ---------------------- */
 
 .section__coordonnees {
-    background-color: #AB864C;
-    color:#ffffff;
-    font-family: 'kaisei Decol';
+    padding: 40px 20px;
     text-align: center;
-    
-    font-family: 'Kaisei Decol', serif;
 }
-.section__coordonnees1{
-    background-color: #AB864C;
-    font-size: 180%;
+
+.section__coordonnees img {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* ---------------------- */
+/* FOOTER */
+/* ---------------------- */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.nav__contact_menu {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
 }
 
+.footer__adresse {
+    margin: 20px 0;
+}
 
+/* ---------------------- */
+/* RESPONSIVE */
+/* ---------------------- */
+
+/* TABLETTES */
+@media (max-width: 900px) {
+
+    .nav__menu_list {
+        gap: 15px;
+    }
+
+    .signature__item {
+        margin: 20px auto;
+    }
+}
+
+/* SMARTPHONES */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav__menu_list {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .haute_couture_content .title {
+        font-size: 1.4rem;
+    }
+
+    .signature__item h2 {
+        font-size: 1.3rem;
+    }
+
+    .nav__contact_menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 
